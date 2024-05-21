@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This repositary will help you understand all the basic building blocks required to \r start with SSR application with ReactJS",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon main.js"
+    "start": "nodemon dist/main.js",
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "nodemon": "^3.1.0",
+    "rollup": "^4.17.2"
   }
 }
