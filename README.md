@@ -1,3 +1,4 @@
+[![Alt Text](https://img.youtube.com/vi/IPw1SxJi0Yc/0.jpg)](https://www.youtube.com/watch?v=IPw1SxJi0Yc)
 # React SSR Application from Scratch
 
 This repository will guide you through all the basic building blocks required to create a server-side rendering (SSR) application using ReactJS.
