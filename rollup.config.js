@@ -5,9 +5,7 @@ const { default: babel } = require('@rollup/plugin-babel');
 const babelOptions = {
 	presets: [
 		'@babel/preset-react',
-		'@babel/preset-env'
 	],
-	extensions: ['js', 'jsx'],
 	babelHelpers: 'bundled',
 	exclude: 'node_modules/**'
 }
@@ -24,8 +22,8 @@ module.exports =  {
 			extensions: ['js', 'jsx'],
 			preferBuiltins: true
 		}),
-		commonjs(),
 		babel(babelOptions),
+		commonjs()
 		
 	],
 	external: ['express', 'react', 'react-dom']

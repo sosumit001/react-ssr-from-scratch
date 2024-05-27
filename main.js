@@ -1,5 +1,5 @@
 import express from 'express'
-import { createElement } from 'react'
+import React from 'react'
 import { renderToString } from 'react-dom/server'
 import App from './components/App.jsx'
 
@@ -12,7 +12,7 @@ const app = express();
 // const App = createElement('div', null, h1)
 
 app.get('/', (req, res) => {
-	const appHTML = renderToString(createElement(App))
+	const appHTML = renderToString(<App/>)
 	res.send(`
 		<!DOCTYPE>
 		<html lang="en">
